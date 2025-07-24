@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background: #f5f8ff;
+}
 /* common-style */
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -19,7 +21,7 @@
 .display-flex {
   display: flex;
 }
-.-text-color-common {
+.text-color-common {
   color: #e95a08;
 }
 .bg-color-common {
@@ -40,19 +42,18 @@ nav {
   align-items: center;
   text-align: center;
 }
-ul {
+.nav-ul {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-li {
+.nav-li {
   list-style: none;
 }
-li a {
+.nav-li-a {
   text-decoration: none;
   margin-right: 20px;
   color: rgba(37, 36, 50, 1);
-
   line-height: 24px;
 }
 .font-color {
@@ -74,4 +75,170 @@ li a {
   font-size: 65px;
   font-weight: bold;
   color: #000000;
+}
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* -- our plant section style-- */
+.our-plant {
+  margin-bottom: 200px;
+}
+.our-plant-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.our-plant-content-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.our-plant-content-p {
+  max-width: 888px;
+  margin: 0 auto;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 30px 20px;
+  margin-bottom: ;
+}
+
+.card-conten-img {
+  width: 100%;
+}
+.card-conten-1 {
+  font-size: 22px;
+  color: #111111;
+  font-weight: 400;
+  line-height: 150%;
+}
+.card-conten-2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111111;
+  line-height: 150%;
+}
+.card-btn {
+  padding: 15px 85px;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+}
+/* Flower & Plants Lover style */
+.flower-plants-lover {
+  gap: 20px;
+  height: 597px;
+  margin-bottom: 138px;
+}
+.flower-plants-img {
+  width: calc(50% - 20px);
+  position: relative;
+}
+.trusted-badge {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  top: -126px;
+  left: 362px;
+}
+.flower-plants-conten {
+  width: calc(50% - 20px);
+  padding: 38px 0 38px 60px;
+}
+.flower-plants-conten-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+}
+.flower-plants-conten-li {
+  padding: 20px 0 0px 15px;
+}
+/* Latest  Deals style */
+.latest-deals-card {
+  display: grid;
+  gap: 25px;
+  height: 423px;
+  text-align: center;
+  align-items: center;
+  margin: 120px auto;
+  color: #ffffff;
+
+  grid-template-areas:
+    "latest-deals-card-1 latest-deals-card-3 latest-deals-card-3"
+    "latest-deals-card-2 latest-deals-card-3 latest-deals-card-3";
+}
+.latest-deals-card-1,
+.latest-deals-card-2 {
+  grid-area: latest-deals-card-1;
+  background: url("../images/deal-bloom.png");
+
+  height: 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 78px;
+}
+
+.latest-deals-card-2 {
+  grid-area: latest-deals-card-2;
+  background: url("../images/deal-ana.png");
+  background-size: cover;
+}
+.latest-deals-card-3 {
+  grid-area: latest-deals-card-3;
+  background: url("../images/deal-zabo.png");
+  border-radius: 20px;
+  height: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-size: cover;
+  padding-top: 180px;
+}
+.latest-card-h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.latest-card-h5-a {
+  color: #ffffff;
+  font-weight: 600;
+}
+.latest-card-h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.latest-card-h3-a {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.footer-bg {
+  height: 533px;
+  background: url("../images/news-letter-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.footer-bg-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.footer-input {
+  padding: 18px 453px 18px 24px;
+  margin-top: 20px;
+}
+.footer-btn {
+  padding: 19px 53px;
+  margin-left: -5px;
+  color: white;
+  border: none;
 }
