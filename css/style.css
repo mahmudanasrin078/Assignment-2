@@ -154,7 +154,8 @@ main {
   color: #000000;
 }
 .flower-plants-conten-li {
-  padding: 20px 0 0px 15px;
+  padding: 22px 0 0px 14px;
+  margin-left: 30px;
 }
 /* Latest  Deals style */
 .latest-deals-card {
@@ -241,4 +242,36 @@ main {
   margin-left: -5px;
   color: white;
   border: none;
+}
+.footer-footer {
+  justify-content: space-between;
+  margin: 50px 160px;
+  max-width: 1120px;
+  height: 248px;
+}
+.footer-1 {
+  max-width: 369px;
+}
+.footer-1 img {
+  margin-bottom: 16px;
+}
+.footer-list-1 {
+}
+.footer-list-1 ul {
+}
+.footer-list-1 ul li {
+  list-style: none;
+  margin-bottom: 24px;
+}
+.footer-list-1 li a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #6b7280;
+  line-height: 24px;
+}
+.footer-img-2 {
+  margin-bottom: 7px;
+}
+.footer-icon img {
+  padding: 0 10px;
 }
