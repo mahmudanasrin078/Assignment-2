@@ -56,6 +56,7 @@ nav {
   color: rgba(37, 36, 50, 1);
   line-height: 24px;
 }
+
 .font-color {
   font-weight: bold;
 }
@@ -233,6 +234,7 @@ main {
   font-weight: 600;
   color: #ffffff;
 }
+/* footer style */
 .footer-bg {
   height: 533px;
   background: url("../images/news-letter-bg.png");
@@ -273,10 +275,7 @@ main {
 .footer-1 img {
   margin-bottom: 16px;
 }
-.footer-list-1 {
-}
-.footer-list-1 ul {
-}
+
 .footer-list-1 ul li {
   list-style: none;
   margin-bottom: 24px;
@@ -293,61 +292,76 @@ main {
 .footer-icon img {
   padding: 0 10px;
 }
-
 @media screen and (max-width: 576px) {
-  body {
+  * {
     margin: 0 auto;
   }
-  nav {
-    margin: 0 16px;
+  .logo {
+    width: 63px;
+    height: 38px;
+  }
+  .banner-img {
+    width: 100%;
   }
   .display {
     visibility: hidden;
   }
   .font-size {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .font-size-p {
+    font-size: 1rem;
   }
   .header-banner {
     flex-wrap: wrap-reverse;
     margin: 100px 0;
   }
-  .banner {
-    align-content: center;
-    margin: 0 16px;
-  }
   .banner-title {
-    margin-top: 28px;
   }
-  .banner-img {
-    width: 100%;
+  .banner {
+    margin: 50px 16px 0 16px;
   }
+  /* .our-plant-content */
   .our-plant {
-    margin: 10px 16px 120px 16px;
+    margin-bottom: 100px;
   }
-  .our-plant-content-con {
-    margin: 0 16px;
+  .our-plant-content-p {
+    width: 425px;
+    margin: 0 auto;
   }
   .card {
     grid-template-columns: repeat(2, 1fr);
   }
+  .card-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .card-conten-2 {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+  }
+  /* Flower & Plants Lover style */
   .flower-plants-lover {
-    flex-wrap: wrap;
+    flex-direction: column;
     height: auto;
   }
+  .trusted-badge {
+    display: none;
+  }
   .flower-plants-img {
-    margin: 0 17px;
     width: 100%;
   }
   .flower-store {
+    width: 409px;
   }
   .flower-plants-conten {
-    width: 100%;
-    padding: 0px 10px 16px 20px;
+    width: 425px;
+    padding: 18px 0 18px 16px;
   }
-  .trusted-badge {
-    visibility: hidden;
+  /* Latest  Deals style */
+  .our-plant-content-con {
+    margin-top: -41px;
   }
-
   .latest-deals-card {
     display: flex;
     flex-direction: column;
@@ -355,7 +369,6 @@ main {
     height: auto;
     margin: 60px 20px;
   }
-
   .latest-deals-card-1,
   .latest-deals-card-2,
   .latest-deals-card-3 {
@@ -373,17 +386,30 @@ main {
   .latest-card-h5-a {
     font-size: 1.7rem;
   }
+  /* footer style */
+  .footer-bg {
+    background-position: center;
+  }
   .footer-bg-title {
     font-size: 2.1rem;
   }
   .footer-input {
-    padding: 19px 109px 19px 24px;
+    padding: 19px 12px 19px 12px;
+  }
+  .footer-btn {
+    padding: 19px 43px;
   }
   .footer-footer {
     flex-direction: column;
     margin: 50px 20px;
   }
+  .footer-p {
+    margin-bottom: 24px;
+  }
+  .footer-list-1 {
+    margin-left: 10px;
+  }
   .footer-icon {
-    padding-bottom: 20px;
+    margin-left: 1px;
   }
 }
