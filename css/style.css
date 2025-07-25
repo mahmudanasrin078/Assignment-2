@@ -28,7 +28,7 @@ body {
   background: #e95a08;
 }
 .common-p {
-  font-size: 22px;
+  font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.5);
 }
 /* header style */
@@ -72,10 +72,12 @@ nav {
   align-content: end;
 }
 .banner-title {
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: bold;
   color: #000000;
 }
+
+/* main section style */
 main {
   max-width: 1140px;
   margin: 0 auto;
@@ -89,10 +91,10 @@ main {
   margin-bottom: 50px;
 }
 .our-plant-content-title {
-  font-size: 50px;
+  font-size: 3.1rem;
   font-weight: bold;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .our-plant-content-p {
   max-width: 888px;
@@ -103,20 +105,19 @@ main {
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   gap: 30px 20px;
-  margin-bottom: ;
 }
 
 .card-conten-img {
   width: 100%;
 }
 .card-conten-1 {
-  font-size: 22px;
+  font-size: 1.4rem;
   color: #111111;
   font-weight: 400;
   line-height: 150%;
 }
 .card-conten-2 {
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #111111;
   line-height: 150%;
@@ -149,7 +150,7 @@ main {
   padding: 38px 0 38px 60px;
 }
 .flower-plants-conten-title {
-  font-size: 50px;
+  font-size: 3.1rem;
   font-weight: bold;
   color: #000000;
 }
@@ -174,8 +175,8 @@ main {
 .latest-deals-card-1,
 .latest-deals-card-2 {
   grid-area: latest-deals-card-1;
-  background: url("../images/deal-bloom.png");
-
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/deal-bloom.png");
   height: 100%;
   border-radius: 20px;
   background-repeat: no-repeat;
@@ -185,12 +186,15 @@ main {
 
 .latest-deals-card-2 {
   grid-area: latest-deals-card-2;
-  background: url("../images/deal-ana.png");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/deal-ana.png");
   background-size: cover;
 }
+
 .latest-deals-card-3 {
   grid-area: latest-deals-card-3;
-  background: url("../images/deal-zabo.png");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("../images/deal-zabo.png");
   border-radius: 20px;
   height: 100%;
   background-repeat: no-repeat;
@@ -199,20 +203,23 @@ main {
   padding-top: 180px;
 }
 .latest-card-h5 {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 .latest-card-h5-a {
   color: #ffffff;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 .latest-card-h3 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .latest-card-h3-a {
-  font-size: 28px;
+  font-size: 1.7rem;
   font-weight: 600;
   color: #ffffff;
 }
@@ -229,7 +236,7 @@ main {
   margin-bottom: 50px;
 }
 .footer-bg-title {
-  font-size: 50px;
+  font-size: 3.1rem;
   font-weight: bold;
   color: #ffffff;
 }
@@ -245,7 +252,7 @@ main {
 }
 .footer-footer {
   justify-content: space-between;
-  margin: 50px 160px;
+  margin: 50px 200px;
   max-width: 1120px;
   height: 248px;
 }
@@ -274,4 +281,97 @@ main {
 }
 .footer-icon img {
   padding: 0 10px;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0 auto;
+  }
+  nav {
+    margin: 0 16px;
+  }
+  .display {
+    visibility: hidden;
+  }
+  .font-size {
+    font-size: 2.5rem;
+  }
+  .header-banner {
+    flex-wrap: wrap-reverse;
+    margin: 100px 0;
+  }
+  .banner {
+    align-content: center;
+    margin: 0 16px;
+  }
+  .banner-title {
+    margin-top: 28px;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  .our-plant {
+    margin: 10px 16px 120px 16px;
+  }
+  .our-plant-content-con {
+    margin: 0 16px;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flower-plants-lover {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .flower-plants-img {
+    width: 100%;
+    margin: 0 17px;
+  }
+  .flower-plants-conten {
+    width: 100%;
+    padding: 0px 10px 16px 20px;
+  }
+  .trusted-badge {
+    visibility: hidden;
+  }
+
+  .latest-deals-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    margin: 60px 20px;
+  }
+
+  .latest-deals-card-1,
+  .latest-deals-card-2,
+  .latest-deals-card-3 {
+    width: 100%;
+    height: 300px;
+    padding-top: 80px;
+  }
+  .latest-card-h5,
+  .latest-card-h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .latest-card-h3-a,
+  .latest-card-h5-a {
+    font-size: 1.7rem;
+  }
+  .footer-bg-title {
+    font-size: 2.1rem;
+  }
+  .footer-input {
+    padding: 18px 109px 18px 24px;
+    margin-top: 20px;
+  }
+  .footer-footer {
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+  .footer-icon {
+    padding-bottom: 20px;
+  }
 }
