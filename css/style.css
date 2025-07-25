@@ -144,6 +144,16 @@ main {
   position: absolute;
   top: -126px;
   left: 362px;
+  animation: rotateBadge 5s linear infinite;
+}
+
+@keyframes rotateBadge {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .flower-plants-conten {
   width: calc(50% - 20px);
