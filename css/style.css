@@ -135,7 +135,7 @@ main {
   margin-bottom: 138px;
 }
 .flower-plants-img {
-  width: calc(50% - 20px);
+  width: 50%;
   position: relative;
 }
 .trusted-badge {
@@ -156,7 +156,7 @@ main {
   }
 }
 .flower-plants-conten {
-  width: calc(50% - 20px);
+  width: 50%;
   padding: 38px 0 38px 60px;
 }
 .flower-plants-conten-title {
@@ -335,8 +335,10 @@ main {
     height: auto;
   }
   .flower-plants-img {
-    width: 100%;
     margin: 0 17px;
+    width: 100%;
+  }
+  .flower-store {
   }
   .flower-plants-conten {
     width: 100%;
